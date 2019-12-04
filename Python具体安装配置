@@ -1,0 +1,31 @@
+（配置Python环境）
+在Terminal进行：
+1、安装homebrew:
+	https://brew.sh/index_zh-cn.html
+	$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+2、安装Python3
+	$ brew install python3
+3、查看Python3版本
+	$ python3 --version
+4、安装pip（可能可以省略）
+    4.1、 查看pip版本： $ pip --version
+    4.2、 4.1无版本号，则安装pip
+         https://bootstrap.pypa.io/get-pip.py 复制文本，save命名为 ==> get-pip.py 保存在某个A文件夹内
+         terminal进入某个A文件夹：$ sudo python get-pip.py
+         再执行4.1步骤，确认已经成功安装pip
+5、安装pygame
+    5.1 安装pygame依赖库：	 $ brew install hg sdl sdl_image sdl_ttf
+    5.2 安装额外库实现高级功能，如游戏声音：	$ brew install sdl_mixer portmidi
+    5.3 安装pygame:		 $ pip3 install pygame
+    
+（管理代码的地方）
+6、安装vscode
+	https://code.visualstudio.com/?wt.mc_id=DX_841432   == install
+	extension里 == 搜Python == install
+
+至此可以完全写Python代码和运行Python代码
+
+7、新建一个文件夹，用vscode打开
+8、新建文件，保存为xxx.py
+9、点绿色三角形，运行代码
+
